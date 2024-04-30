@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- sync w/ 5.9.5-p5
+- sync w/ 5.29.5-p5
 
 ### Fixed
 
