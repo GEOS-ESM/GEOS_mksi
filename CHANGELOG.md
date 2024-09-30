@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - add CrIS-N21 info
 - updated CrIS-NPP obs errors
+- fix for 272 satwind state hour
 
 ### Fixed
 
