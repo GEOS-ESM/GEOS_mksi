@@ -38,3 +38,8 @@ install(
    DIRECTORY pcscaling.db/
    DESTINATION etc/gmao_pcscaling.db
    )
+
+install(
+   DIRECTORY ObsClass.db/
+   DESTINATION etc/
+   )
