@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - add CrIS-N21 info
 - updated CrIS-NPP obs errors
+- move obs-class rc files to a db inside this
+  (notice that handling scripts are still kept 
+  in @GMAO_Shared/GMAO_etc
 
 ### Fixed
 
