@@ -10,8 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 ### Changed
-  - this sync the develop code w/ what is in main.
-  - the develop code is similar to what was used to run x0048 and x0049
+
+- sync w/ 5.29.5-p5
+
 ### Fixed
 
 ### Removed
