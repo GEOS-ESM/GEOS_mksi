@@ -13,9 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - add CrIS-N21 info
 - updated CrIS-NPP obs errors
+- update with recent satellite outages
 
 ### Fixed
 
+- remove redundant MetOp gps entries in convinfo DB active files
 ### Removed
 
 ### Deprecated
