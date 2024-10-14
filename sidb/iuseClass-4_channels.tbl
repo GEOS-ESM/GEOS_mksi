@@ -24,6 +24,8 @@
 #  20Nov2018 McCarty    - Add NOAA-20
 #  12Jan2020 Sienkiewicz - Add MetOp-C AMSU-A
 #  25May2021 Sienkiewicz - Change start date for N20 ATMS
+#  14Oct2024 Todling     - From 20230101/00z, bias correct: n18,n19,n20,n21,metop-b/c,npp
+#
 # NOAA-05 (tn)
 #=============
 # tirosn SSU ch 3 unusable
@@ -130,25 +132,27 @@ n17  20031028 000000  20031030 240000  amsua  0                         # amsua:
 # NOAA-18 (nn)
 #=============
 n18  20051001 000000  20071116 120000  amsua  1        14               # M2: redundant entry intentional.  Observations
-###                                                                                             # exist prior to MERRA(1) start date.  Will
-###                                                                                             # attempt to assimilate.  This should be set
-###                                                                                             # to inactive should an issue arise (wm)
+###                                                                     # exist prior to MERRA(1) start date.  Will
+###                                                                     # attempt to assimilate.  This should be set
+###                                                                     # to inactive should an issue arise (wm)
 n18  20051101 000000  20071116 120000  amsua  1        14               # (old note)added all 14 back (see iuse-4.tbl)
-n18  20071116 180000  20230911 240000  amsua  1        14               # amsua: 9 bad, added all 14 back
-n18  20230912 000000  20231024 240000  amsua  0                         # NOAA-18 satellite will be fully transitioned to Parsons
-n18  20231025 000000  20240621 060000  amsua  1        14               # Transition complete
-n18  20240621 120000  21001231 240000  amsua  0                         # Noisy channel 14 (all sats)
+n18  20071116 180000  20221231 240000  amsua  1        14               # amsua: 9 bad, added all 14 back
+#n18  20071116 180000  20230911 240000  amsua  1        14               # amsua: 9 bad, added all 14 back
+#n18  20230912 000000  20231024 240000  amsua  0                         # NOAA-18 satellite will be fully transitioned to Parsons
+#n18  20231025 000000  20240621 060000  amsua  1        14               # Transition complete
+#n18  20240621 120000  21001231 240000  amsua  0                         # Noisy channel 14 (all sats)
 
 
 # NOAA-19 (nn')
 #==============
 n19  20090414 000000  20091215 060000  amsua  1        14               # M2: redundant entry intentional.  Observations
-###                                                                                             # exist prior to MERRA(1) start date.  Will
-###                                                                                             # attempt to assimilate.  This should be set
-###                                                                                             # to inactive should an issue arise (wm)
+###                                                                     # exist prior to MERRA(1) start date.  Will
+###                                                                     # attempt to assimilate.  This should be set
+###                                                                     # to inactive should an issue arise (wm)
 n19  20091215 120000  20091221 240000  amsua  1        14               #
-n19  20091222 000000  20240621 060000  amsua  1        14               #  ch8 noisy (noise started on 12/21/2009)
-n19  20240621 120000  21001231 240000  amsua  0                         #  Noisy channel 14 (all sats)
+n19  20091222 000000  20221231 240000  amsua  1        14               #
+#n19  20091222 000000  20240621 060000  amsua  1        14               #  ch8 noisy (noise started on 12/21/2009)
+#n19  20240621 120000  21001231 240000  amsua  0                         #  Noisy channel 14 (all sats)
 
 # Aqua AMSU-A
 #=============
@@ -166,13 +170,15 @@ metop-a 20210918 120000  21001231 240000  amsua 0
 
 # METOP-B
 #=========
-metop-b 20130213 000000  20240621 060000  amsua  1     14            # active for e512a_rt - known tech ok to be on
-metop-b 20240621 120000  21001231 240000  amsua  0                   # Noisy channel 14 (all sats)
+#metop-b 20130213 000000  20240621 060000  amsua  1     14            # active for e512a_rt - known tech ok to be on
+metop-b 20130213 000000  20221231 240000  amsua  1     14            # active for e512a_rt - known tech ok to be on
+#metop-b 20240621 120000  21001231 240000  amsua  0                   # Noisy channel 14 (all sats)
 
 # METOP-C   # using start data of data in regular data files - can modify this to reflect additional data availability
 #=========
-metop-c 20190917 000000  20240621 060000  amsua  1     14            #
-metop-c 20240621 000000  21001231 240000  amsua  0                   # Noisy channel 14 (all sats)
+#metop-c 20190917 000000  20240621 060000  amsua  1     14            #
+metop-c 20190917 000000  20221231 240000  amsua  1     14            #
+#metop-c 20240621 000000  21001231 240000  amsua  0                   # Noisy channel 14 (all sats)
 
 
 # Downgrade & upgrade 14 to iuse=4
@@ -184,22 +190,24 @@ npp  20210806 000000  20220726 120000  atms  1  15
 npp  20220726 180000  20220817 060000  atms  0
 npp  20220817 120000  20220827 240000  atms  1  15
 npp  20220828 000000  20220902 060000  atms  0
-npp  20220902 120000  20231101 000000  atms  1  15
-npp  20231101 060000  20231104 000000  atms  0                       # safe mode
-npp  20231104 060000  20240525 240000  atms  1  15
-npp  20240526 060000  20240607 060000  atms  0                       # gps geolocation problem
-npp  20240607 120000  20240621 060000  atms  1  15
-npp  20240621 120000  21001231 240000  atms  0                       # Noisy channel 15 (all sats)
+#npp  20220902 120000  20231101 000000  atms  1  15
+npp  20220902 120000  20221231 240000  atms  1  15
+#npp  20231101 060000  20231104 000000  atms  0                       # safe mode
+#npp  20231104 060000  20240525 240000  atms  1  15
+#npp  20240526 060000  20240607 060000  atms  0                       # gps geolocation problem
+#npp  20240607 120000  20240621 060000  atms  1  15
+#npp  20240621 120000  21001231 240000  atms  0                       # Noisy channel 15 (all sats)
 
-n20  20180510 000000  20230929 240000  atms  1  15
-n20  20230930 000000  20231002 240000  atms  0                       # N20 safe mode starts on 09/30
-n20  20231003 000000  20240321 120000  atms  1  15
-n20  20240321 180000  20240408 060000  atms  0                       # N-20 maneuver
-n20  20240408 120000  20240621 060000  atms  1  15
-n20  20240621 120000  21001231 240000  atms  0                       # Noisy channel 15 (all sats)
+#n20  20180510 000000  20230929 240000  atms  1  15
+n20  20180510 000000  20221231 240000  atms  1  15
+#n20  20230930 000000  20231002 240000  atms  0                       # N20 safe mode starts on 09/30
+#n20  20231003 000000  20240321 120000  atms  1  15
+#n20  20240321 180000  20240408 060000  atms  0                       # N-20 maneuver
+#n20  20240408 120000  20240621 060000  atms  1  15
+#n20  20240621 120000  21001231 240000  atms  0                       # Noisy channel 15 (all sats)
 
 
 
-n21  20230920 120000  20240621 060000  atms  1  15
-n21  20240621 120000  21001231 240000  atms  0                       # Noisy channel 15 (all sats)
+#n21  20230920 120000  20240621 060000  atms  1  15
+#n21  20240621 120000  21001231 240000  atms  0                       # Noisy channel 15 (all sats)
 
