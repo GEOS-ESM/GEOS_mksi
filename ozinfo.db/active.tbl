@@ -1,6 +1,6 @@
 # !REVISION HISTORY:
 #
-#  21Nov2011  jguo       Initial checkin of ozinfo.db 
+#  21Nov2011  jguo       Initial checkin of ozinfo.db
 #  12Dec2011  msienkie   First try to fill in valid dates for data
 #                          Add start/stop dates based on MERRA file
 #                           availability in obsys-nccs.rc
@@ -10,7 +10,7 @@
 #   7May2012  msienkie   turn off total ozone for sbuv8 types
 #  30Jul2012  rtodling   turn off channels 1-5 for N17-19 (sbuv8)
 #  04Sep2012  rtodling   turn channels 1-5 for N17-19 (sbuv8) back on!
-#                             
+#
 #  Info from SBUV team via Kris:
 #
 #   If using Version 8.6 SBUV data (most recent version):
@@ -20,7 +20,7 @@
 #        20010101_00z-20070630_18z n16 (NOAA 16)
 #        20021117_00z-20101231_18z n17 (NOAA 17)
 #        20050605_00Z-present      n18 (NOAA 18)
-# 
+#
 # If using Version 8.0
 #        19781101_00z-19900531_18z n07 (Nimbus 7)
 #        19890101_00z-19941231_18z n11 (NOAA 11)
@@ -44,16 +44,16 @@ aura      20041001 000000  29991231 240000   o3lev        37    1  2  3  4  5  6
 aura      20041001 000000  29991231 240000   o3lev         7   38 39 40 41 42 43 44
 # aura ozone levels (mls, nrt - gmao)                    count  -- levels --
 aura      20130401 000000  29991231 240000   mls55     29       9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37
-aura      20130401 000000  29991231 240000   mls55      6   38 39 40 41 42 43 
+aura      20130401 000000  29991231 240000   mls55      6   38 39 40 41 42 43
 
 # Note that redundency of the same data is allowed software.  One has to edit either time range of active.tbl or gsi.rc to explude one or another.
 # aura ozone levels (omi .xor. omieff)               count  -- levels --
-aura      19900101 000000  29901231 240000   omi         1       1     
+aura      19900101 000000  29901231 240000   omi         1       1
 aura      20041001 000000  29991231 240000   omieff      1       1
 
 # toms                                               count  -- levels --
-nim07     19000101 000000  19930531 240000   tomseff      0       
-ep        19960722 000000  29991231 240000   tomseff      0       
+nim07     19000101 000000  19930531 240000   tomseff      0
+ep        19960722 000000  29991231 240000   tomseff      0
 
 # metop-a ozone levels (gome)                        count  -- levels --
 metop-a   19900101 000000  29991231 240000   gome        0
