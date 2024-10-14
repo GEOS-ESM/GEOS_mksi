@@ -1,5 +1,7 @@
 esma_set_this()
 
+add_subdirectory(ObsClass)
+
 if (CMAKE_Fortran_COMPILER_ID MATCHES Intel)
    set (CMAKE_Fortran_FLAGS_RELEASE "${FOPT3} ${ALIGNCOM}")
 endif ()
@@ -38,3 +40,4 @@ install(
    DIRECTORY pcscaling.db/
    DESTINATION etc/gmao_pcscaling.db
    )
+
