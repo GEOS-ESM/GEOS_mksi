@@ -16,9 +16,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - move obs-class rc files to a db inside this
   (notice that handling scripts are still kept 
   in @GMAO_Shared/GMAO_etc
+- update with recent satellite outages
 
 ### Fixed
 
+- remove redundant MetOp gps entries in convinfo DB active files
 ### Removed
 
 ### Deprecated
