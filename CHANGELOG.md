@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   in @GMAO_Shared/GMAO_etc
 - update with recent satellite outages
 - bias correct from 20230101-00z: n18,n19,n20,n21,npp,metop-b/c
+- fix bad merge Oct 2024
 
 ### Fixed
 
