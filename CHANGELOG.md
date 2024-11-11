@@ -20,6 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - bias correct from 20230101-00z: n18,n19,n20,n21,npp,metop-b/c
 - fix bad merge Oct 2024
 
+- Revise sources of OMPS-LP observations (NPP and N21)
+
 ### Fixed
 
 - remove redundant MetOp gps entries in convinfo DB active files
