@@ -100,6 +100,7 @@
 #+  ncep_ssmis_bufr:  NCEP SSMIS Data in bufr format
 #+  ncep_ssmit_bufr:  NCEP Satellite SSM/I Data (bufr)
 #+  ncep_prep_bufr:   NCEP Conventional Data in bufr format (ops)
+#+  ncep_uprair_bufr: NCEP high density radiosondes in bufr format (ops)
 #+  ncep_tcvitals:    NCEP Vital files for Tropical Storms
 #+  ncep_mhs_bufr:    NCEP MHS bufr format
 #+  ncep_goesfv_bufr:  NCEP GEOS FV bufr format
@@ -191,6 +192,10 @@ BEGIN ncep_prep_bufr => gdas1.%y4%m2%d2.t%h2z.prepbufr.ublk
 #  20060101_00z-21001231_18z 060000 /archive/input/dao_ops/ops/flk/ncep_g5obs/bufr/PREPBUFR/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.prepbufr
   20050204_00z-20050204_06z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/PREPBUFR/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.prepbufr
   20050301_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/PREPBUFR/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.prepbufr
+END
+
+BEGIN ncep_uprair_bufr => gdas1.%y4%m2%d2.t%h2z.uprair.ublk
+  20240523_06z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/UPRAIR/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.uprair.tm00.bufr_d
 END
 
 ###############################################################################################################
