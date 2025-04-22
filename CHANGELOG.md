@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- add Metop-C AVHRR3 from late Jan 2025 onward
+
 ### Changed
 
 - add GOES-19 AMVs (subtype 273)
