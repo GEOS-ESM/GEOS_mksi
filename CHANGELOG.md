@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- add GOES-19 AMVs (subtype 273)
+- add transition dates for recent GOES AMVs
 - add CrIS-N21 info
 - updated CrIS-NPP obs errors
 - fix for 272 satwind state hour
