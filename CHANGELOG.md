@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+21May2025:
+
+- turn chn 15 of ATMS NPP back on
+
 16May2025:
 
 - Revise OMPS-LP for FPP/FP settings
