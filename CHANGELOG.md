@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+16May2025:
+
+- Revise OMPS-LP for FPP/FP settings
+
+----------
+
 - add Metop-C AVHRR3 from late Jan 2025 onward
 
 ### Changed
