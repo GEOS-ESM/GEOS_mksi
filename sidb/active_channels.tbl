@@ -461,7 +461,8 @@ metop-c 20190917 000000  20231004 240000  amsua 11        4 5 6 7 8 9 10 11 12 1
 metop-c 20231005 000000  20231026 240000  amsua  8              7 8 9 10 11 12 13 14           # reduction in accepted obs, noise, due to data drop-outs of ch4
 metop-c 20231027 000000  20240621 060000  amsua 11        4 5 6 7 8 9 10 11 12 13 14           # data drop-outs ended on 10/24
 metop-c 20240621 120000  20241231 240000  amsua 10        4 5 6 7 8 9 10 11 12 13              # Noisy channel 14 (all sats)
-metop-c 20250101 000000  21001231 240000  amsua 10        4 5 6 7   9 10 11 12 13 14           # Noisy chn8/chn14 back (used at ECMWF)
+metop-c 20250101 000000  20250122 240000  amsua 10        4 5 6 7   9 10 11 12 13 14           # Noisy chn8/chn14 back (used at ECMWF)
+metop-c 20250123 000000  21001231 240000  amsua  7              7   9 10 11 12 13 14           # Noisy chn4-6
 
 metop-c 20190917 000000  21001231 240000  mhs    5  1 2 3 4 5                                  # active for parallel testing
 metop-c 20250131 120000  21001231 240000  avhrr3 2        4 5
