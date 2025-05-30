@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+30May2025:
+- found that swell cannot handle redundancy in data/time in the database - fix that.
+- also found a bug in the start date for Metop-C AVHRR3
+
 22May2025:
 - chn 4-6 of AMSUA MetopC should have been turned off after a given date.
 
