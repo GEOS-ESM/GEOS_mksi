@@ -194,6 +194,12 @@ BEGIN ncep_prep_bufr => gdas1.%y4%m2%d2.t%h2z.prepbufr.ublk
   20050301_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/PREPBUFR/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.prepbufr
 END
 
+# NCEP Uprair data 
+# --------------------------------
+BEGIN ncep_uprair_bufr => gdas1.%y4%m2%d2.t%h2z.uprair.ublk
+ 20240523_06z-21001231_18z      060000 /discover/nobackup/msienkie/tmp/chk_uprair/uprair_data/Y%y4/M%m2/gdas.uprair.%y4%m2%d2_t%h2z.tm00.bufr_d
+END
+
 ###############################################################################################################
 ###############################################################################################################
 #                                Modern Era Reanalysis Observing System
