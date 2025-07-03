@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+01July2025:
+- Turn off SSMIS F17 July 25
+
 30May2025:
 - found that swell cannot handle redundancy in data/time in the database - fix that.
 - also found a bug in the start date for Metop-C AVHRR3
