@@ -445,7 +445,8 @@ BEGIN m2scr_n21_ompslp_nc => ompslpnc_n21.%y4%m2%d2.t%h2z.nc
 END
 
 BEGIN aura_omieff_nc => omieff.%y4%m2%d2.t%h2z.nc
- 20041001_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/omi_eff_adjusted/Y%y4/M%m2/OMIeff-adj.%y4%m2%d2_%h2z.nc
+ 20041001_00z-20240608_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/omi_eff_adjusted/Y%y4/M%m2/OMIeff-adj.%y4%m2%d2_%h2z.nc
+ 20240609_00z-21001231_18z 060000  /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/omi_eff_adjusted_CORRECTED_nrt/Y%y4/M%m2/OMIeff-adj-nrt.%y4%m2%d2_%h2z.nc
 END
 
 # MLS retrieved temperature

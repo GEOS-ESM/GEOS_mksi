@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+01July2025:
+- Turn off SSMIS F17 July 25
+
+30May2025:
+- found that swell cannot handle redundancy in data/time in the database - fix that.
+- also found a bug in the start date for Metop-C AVHRR3
+
+22May2025:
+- chn 4-6 of AMSUA MetopC should have been turned off after a given date.
+
+- it was also found out on May 22 that EMC is no longer delivering the version of bufr 
+  OMI being used in FP; so changes here move the pointer to OMIEFF being used in 
+  GEOS-IT (this is a real time version of the data).
+
+21May2025:
+
+- turn chn 15 of ATMS NPP back on
+
 16May2025:
 
 - Revise OMPS-LP for FPP/FP settings
