@@ -100,6 +100,7 @@
 #+  ncep_ssmis_bufr:  NCEP SSMIS Data in bufr format
 #+  ncep_ssmit_bufr:  NCEP Satellite SSM/I Data (bufr)
 #+  ncep_prep_bufr:   NCEP Conventional Data in bufr format (ops)
+#+  ncep_uprair_bufr: NCEP high-resolution sonde + pibal data in bufr format 
 #+  ncep_tcvitals:    NCEP Vital files for Tropical Storms
 #+  ncep_mhs_bufr:    NCEP MHS bufr format
 #+  ncep_goesfv_bufr:  NCEP GEOS FV bufr format
@@ -131,6 +132,12 @@
 #+  m2scr_n21_ompslp_nc: M2Scream-OMPS N21 Limb Profilers
 #+  aura_omieff_nc:    AURA OMI netcdf format
 #+  gmao_mlst_bufr:    MLS Retrieved Temperature (for verification in x-exp and FP)
+#+  raob_pblh_nc:      PBLH derived from raob (Bulk Ri-based)
+#+  calipso_pblh_nc:   PBLH derived from CALIPSO (ATB-based)
+#+  cats_pblh_nc:      PBLH derived from CATS (ATB-based)
+#+  mplnet_pblh_nc:    PBLH derived from MPLNET (ATB-based)
+#+  wp_pblh_nc:        PBLH derived from GRWP (Radar-based)
+#+  gnssro_pblhlow_nc: PBLH derived from GNSSRO (refractivity gradient-based, lowest minima)
 #+END
 #
 
@@ -455,3 +462,24 @@ BEGIN gmao_mlst_bufr => MLSt.%y4%m2%d2.t%h2z.bufr
 #20150601_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/mls/temperature_v4/bufr/Y%y4/M%m2/MLSt_v4.%y4%m2%d2.t%h2z.bufr
  20040802_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/mls/temperature_v5/bufr/Y%y4/M%m2/MLSt_v5.%y4%m2%d2.t%h2z.bufr
 END
+
+# PBLH data
+BEGIN raob_pblh_nc => raobpblh.%y4%m2%d2%h2.nc
+ 20150821_12z-21001231_18z 060000 /discover/nobackup/projects/gmao/obsdev/eyang2/PBLH/raob_pblh/Y%y4/M%m2/raob_pblh.%y4%m2%d2%h2.nc4
+END
+BEGIN calipso_pblh_nc => calipsopblh.%y4%m2%d2%h2.nc
+ 20150821_12z-21001231_18z 060000 /discover/nobackup/projects/gmao/obsdev/yzhu/archive/DATA_pblh/CALIPSO_Erica/Y%y4/M%m2/calipso_pblh.%y4%m2%d2%h2.nc4
+END
+BEGIN cats_pblh_nc => catspblh.%y4%m2%d2%h2.nc
+ 20150821_12z-21001231_18z 060000 /discover/nobackup/projects/gmao/obsdev/yzhu/archive/DATA_pblh/CATS_Steve/Y%y4/M%m2/cats_pblh.%y4%m2%d2%h2.nc4
+END
+BEGIN mplnet_pblh_nc => mplnetpblh.%y4%m2%d2%h2.nc
+ 20150821_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/obsdev/eyang2/PBLH/DATA_PBLH/MPLNET_Jasper/Y%y4/M%m2/mplnet_pblh.%y4%m2%d2%h2.nc4
+END
+BEGIN wp_pblh_nc => wp_pblh.%y4%m2%d2%h2.nc
+ 20150821_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/obsdev/eyang2/PBLH/DATA_PBLH/WP_Haydee/Y%y4/M%m2/wp_pblh.%y4%m2%d2%h2.nc4
+END
+BEGIN gnssro_pblhlow_nc => gnssropblhlow.%y4%m2%d2%h2.nc
+ 20150821_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/obsdev/eyang2/PBLH/DATA_PBLH/GNSSRO_Manisha/NC4/bufr2nc/NEW_scripts/output/twopeaks/thresh40/firstPBLH/gnssro_pblhlow_obs_%y4%m2%d2%h2.nc4
+END
+
