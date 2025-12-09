@@ -182,9 +182,6 @@ BEGIN ncep_1bamub_bufr => gdas1.%y2%m2%d2.t%h2z.1bamub.tm00.bufr_d.ublk
   20050201_00z-20140319_06z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/AMSUB/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.1bamub.tm00.bufr_d
   20140319_18z-20140611_00z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/AMSUB/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.1bamub.tm00.bufr_d
 END
-BEGIN ncep_1bhrs2_bufr => gdas1.%y2%m2%d2.t%h2z.1bhrs2.tm00.bufr_d.ublk
-  20040615_00z-20060926_18z 240000 /archive/input/dao_ops/ops/flk/ncep_g5obs/bufr/HIRS2/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.1bhrs2.tm00.bufr_d
-END
 BEGIN ncep_1bhrs3_bufr => gdas1.%y2%m2%d2.t%h2z.1bhrs3.tm00.bufr_d.ublk
 # 20040410_00z-20040411_18z 060000 /archive/input/dao_ops/geos5/Y%y4/M%m2/D%d2/gdas1.t%h2z.1bhrs3.tm00.bufr_d
 # 20050201_00z-20140606_18z 060000 /archive/input/dao_ops/ops/flk/ncep_g5obs/bufr/HIRS3/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.1bhrs3.tm00.bufr_d
@@ -192,9 +189,6 @@ BEGIN ncep_1bhrs3_bufr => gdas1.%y2%m2%d2.t%h2z.1bhrs3.tm00.bufr_d.ublk
   20040617_00z-20041231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/HIRS3/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.1bhrs3.tm00.bufr_d
   20050201_00z-20140319_06z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/HIRS3/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.1bhrs3.tm00.bufr_d
   20140319_18z-20140611_00z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/HIRS3/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.1bhrs3.tm00.bufr_d
-END
-BEGIN ncep_1bmsu_bufr => gdas1.%y2%m2%d2.t%h2z.1bmsu.tm00.bufr_d.ublk
-  20040615_00z-20060926_18z 240000 /archive/input/dao_ops/ops/flk/ncep_g5obs/bufr/MSU/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.1bmsu.tm00.bufr_d
 END
 
 # NCEP Prep-bufr conventional data
@@ -207,11 +201,6 @@ BEGIN ncep_prep_bufr => gdas1.%y4%m2%d2.t%h2z.prepbufr.ublk
   20050301_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/PREPBUFR/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.prepbufr
 END
 
-# NCEP high-resolution sonde + pibal data in bufr format
-# -------------------------------
-BEGIN ncep_uprair_bufr => gdas1.%y4%m2%d2.t%h2z.uprair.tm00.bufr_d
-  20240524_06z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/UPRAIR/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.uprair.tm00.bufr_d
-END
 ###############################################################################################################
 ###############################################################################################################
 #                                Modern Era Reanalysis Observing System
@@ -299,7 +288,7 @@ BEGIN ncep_satwnd_bufr => gdas1.%y4%m2%d2.t%h2z.satwnd.tm00.bufr_d.ublk
 END
 BEGIN ncep_sevcsr_bufr => gdas1.%y4%m2%d2.t%h2z.sevcsr.tm00.bufr_d.ublk
 # 20120502_00z-21001231_18z 060000 /archive/input/dao_ops/ops/flk/ncep_g5obs/bufr/SEVCSR/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.sevcsr.tm00.bufr_d
-  20120214_12z-20221004_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/SEVCSR/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.sevcsr.tm00.bufr_d
+  20120214_12z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/SEVCSR/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.sevcsr.tm00.bufr_d
 END
 BEGIN ncep_avcsam_bufr => gdas1.%y2%m2%d2.t%h2z.avcsam.tm00.bufr_d.ublk
 # 20120207_00z-21001231_18z 060000 /archive/input/dao_ops/ops/flk/ncep_NotUsed/bufr/AVCSAM/Y%y4/M%m2/gdas1.%y2%m2%d2.t%h2z.avcsam.tm00.bufr_d
@@ -385,17 +374,6 @@ BEGIN disc_amsua_bufr => eos_amsua.%y4%m2%d2.t%h2z.bufr
   20190728_12z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/aqua_disc/bufr/amsu/Y%y4/M%m2/amsua_disc.%y4%m2%d2.t%h2z.bufr
 # 20101001_00z-20101031_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/aqua_disc/bufr/amsu/Y%y4/M%m2/amsua_disc_final.%y4%m2%d2.t%h2z.bufr
 # 20131001_00z-20131031_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/aqua_disc/bufr/amsu/Y%y4/M%m2/amsua_disc_final.%y4%m2%d2.t%h2z.bufr
-END
-#
-# New data types with GEOS-5.13.1
-#---------------------------------
-BEGIN rscat_bufr => rscat.%y4%m2%d2.t%h2z.bufr_d.ublk
-  20150501_00z-20150909_18z 240000 /discover/nobackup/dao_ops/intermediate/flk/stage/rapidscat/rscat.%y4%m2%d2.%h2z.bufr
-  20150910_00z-20150917_18z 240000 /discover/nobackup/dao_ops/intermediate/flk/stage/rapidscat/rscat.%y4%m2%d2.%h2z.bufr.e5131_fp
-  20150918_00z-20160819_18z 240000 /discover/nobackup/dao_ops/intermediate/flk/stage/rapidscat/rscat.%y4%m2%d2.%h2z.bufr
-# 20150501_00z-20150909_18z 240000 /archive/input/dao_ops/obs/flk/rapidscat/bufr/rapidscat/Y%y4/M%m2/rscat.%y4%m2%d2.%h2z.bufr
-# 20150910_00z-20150917_18z 240000 /archive/input/dao_ops/obs/flk/rapidscat/bufr/rapidscat/Y%y4/M%m2/rscat.%y4%m2%d2.%h2z.bufr.e5131_fp
-# 20150918_00z-20160819_18z 240000 /archive/input/dao_ops/obs/flk/rapidscat/bufr/rapidscat/Y%y4/M%m2/rscat.%y4%m2%d2.%h2z.bufr
 END
 
 # GPM GMI 1CR brightness temperature
