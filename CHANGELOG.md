@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+08Jan2026:
+- update location of LLK AERONET files 
+
 15Jul2025:
 - add class-location of hi-res RAOB
 
