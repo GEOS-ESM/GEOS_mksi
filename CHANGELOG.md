@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+15Jul2025:
+- add class-location of hi-res RAOB
+
 01July2025:
 - Turn off SSMIS F17 July 25
 
