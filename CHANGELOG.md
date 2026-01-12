@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+09Jan2026:
+- sync with actually running FPP (OPS handled)
+
 08Jan2026:
 - update location of LLK AERONET files 
 
