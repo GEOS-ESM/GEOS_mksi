@@ -31,6 +31,18 @@ BEGIN patmosx_des => patmosx_v05r02.des.%y4%m2%d2_%h2z.npz
   19790101_00z-20020801_00z 030000 /archive/input/dao_ops/obs/reanalysis/patmosx/Level2/Synoptic/Y%y4/M%m2/D%d2/patmosx_v05r02.des.%y4%m2%d2_%h2z.npz
 END
 
+# VIIRS NOAA-20 AERDT Level2 Data
+#--------------------------------
+BEGIN vn20aerdt_002_flk => VN20AERDT_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.002.nrt.nc
+  20250805_00z-21001231_18z 000600 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/VIIRS/Level2/VN20AERDT/002/%y4/%j3/AERDT_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.002.nrt.nc
+END
+
+# VIIRS NOAA-20 AERDB Level2 Data
+#--------------------------------
+BEGIN vn20aerdb_002_flk => VN20AERDB_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.002.nrt.nc
+  20250101_00z-21001231_18z 000600 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/VIIRS/Level2/VN20AERDB/002/%y4/%j3/AERDB_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.002.nrt.nc
+END
+
 # MODIS Terra Level2 Data
 #------------------------
 BEGIN mod04_061_flk => MOD04_L2.A%y4%j3.%h2%n2.061.NRT.hdf

@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+15Jan2026
+- added location of VIIRS NOAA-20 files
+
 09Jan2026:
 - sync with actually running FPP (OPS handled)
 
