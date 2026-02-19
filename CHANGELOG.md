@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+15Jan2026
+- added location of VIIRS NOAA-20 files
 
 27Jan2026
 - adjust for AIRS outage in FPP
