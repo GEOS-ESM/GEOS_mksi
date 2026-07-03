@@ -3,14 +3,27 @@
   verbose=.false.
   pcscales(:)=
 !   yyyymmddhh     isis       ichan   scale
-    2009041200  amsua_n15       0    1000.
-    2009041400  amsua_n18       0    1000.
-    2009041600  amsua_metop-a   0    1000.
-    2017030812  atms_npp        0    1000.
-    2017080218  iasi_metop-b    0    1000.
-    2020010206  cris-fsr_npp    0    1000.
+  pcscales(1)%nymdh = 2009041200, pcscales(1)%isis = 'amsua_n15',   pcscales(1)%ichan = 0, pcscales(1)%scale = 1000.0,
+  pcscales(2)%nymdh = 2009041400, pcscales(2)%isis = 'amsua_n18',   pcscales(2)%ichan = 0, pcscales(2)%scale = 1000.0,
+  pcscales(3)%nymdh = 2009041600, pcscales(3)%isis = 'amsua_metop-a',pcscales(3)%ichan = 0, pcscales(3)%scale = 1000.0,
+  pcscales(4)%nymdh = 2017030812, pcscales(4)%isis = 'atms_npp',    pcscales(4)%ichan = 0, pcscales(4)%scale = 1000.0,
+  pcscales(5)%nymdh = 2017080218, pcscales(5)%isis = 'iasi_metop-b', pcscales(5)%ichan = 0, pcscales(5)%scale = 1000.0,
+  pcscales(6)%nymdh = 2020010206, pcscales(6)%isis = 'cris-fsr_npp', pcscales(6)%ichan = 0, pcscales(6)%scale = 1000.0,
+/
 
-! Note:
-!    ichan      - ichan >0 is for a selected channel;
-!                 ichan =0 is for _all_ channels.
-  /
+!!  quick hack here, you can also Fortran read
+!!
+!!  pcscales(:)=
+!!!   yyyymmddhh     isis       ichan   scale
+!!    2009041200  amsua_n15       0    1000.
+!!    2009041400  amsua_n18       0    1000.
+!!    2009041600  amsua_metop-a   0    1000.
+!!    2017030812  atms_npp        0    1000.
+!!    2017080218  iasi_metop-b    0    1000.
+!!    2020010206  cris-fsr_npp    0    1000.
+!!
+!!! Note:
+!!!    ichan      - ichan >0 is for a selected channel;
+!!!                 ichan =0 is for _all_ channels.
+!!  /
+!!
