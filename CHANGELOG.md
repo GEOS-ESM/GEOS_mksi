@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+-17Jul2026: AIRS conflicting dates fixed; ABI end date for JEDI/SWELL handling.
+
 -09Mar2026: End use of MODIS on Jan 31, 2026; start using VIIRS beyond that.
 
 15Jan2026
