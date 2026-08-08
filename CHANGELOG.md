@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+15July2025:
+- ATMS channels 1-4 and 16 are turned on when all-sky approach is used for ATMS.
+
 ### Added
 -09Mar2026: End use of MODIS on Jan 31, 2026; start using VIIRS beyond that.
 
