@@ -86,6 +86,7 @@
 # 2021.07.31 Todling         Add MLS-T for verification
 # 2021.08.18 Todling         Blacked out a few days of AIRS due to data corruption
 # 2021.12.14 Todling         Update MLST from v3/v4 to simply v5
+# 2025.05.22 A.lee           Added ncep_sstvcw_bufr for viirs-m radiance assimilation
 #
 #+BEGIN obclass data set description
 #+  ncep_osbuv8_6_bufr: NCEP SBUV Data in bufr format v8.6
@@ -132,6 +133,7 @@
 #+  m2scr_n21_ompslp_nc: M2Scream-OMPS N21 Limb Profilers
 #+  aura_omieff_nc:    AURA OMI netcdf format
 #+  gmao_mlst_bufr:    MLS Retrieved Temperature (for verification in x-exp and FP)
+#+  ncep_sstvcw_bufr:  NCEP VIIRS bufr format
 #+END
 #
 
@@ -454,6 +456,10 @@ BEGIN aura_omieff_nc => omieff.%y4%m2%d2.t%h2z.nc
  20240609_00z-21001231_18z 060000  /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/omi_eff_adjusted_CORRECTED_nrt/Y%y4/M%m2/OMIeff-adj-nrt.%y4%m2%d2_%h2z.nc
 END
 
+BEGIN ncep_sstvcw_bufr => gdas1.%y4%m2%d2.t%h2z.sstvcw.tm00.bufr_d.ublk
+ 20230701_06z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/SSTVCW/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.sstvcw.tm00.bufr_d
+END
+
 # MLS retrieved temperature
 BEGIN gmao_mlst_bufr => MLSt.%y4%m2%d2.t%h2z.bufr
 #20040813_00z-20150531_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/mls/temperature_v3/bufr/Y%y4/M%m2/MLSt.%y4%m2%d2.t%h2z.bufr
@@ -464,4 +470,8 @@ END
 BEGIN ncep_goescsr_bufr => gdas1.%y2%m2%d2.t%h2z.gsrcsr.tm00.bufr_d
  20230101_00z-20250606_00z 060000 /archive/input/dao_ops/ops/flk/ncep_gps/bufr/GSRCSR/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.gsrcsr.tm00.bufr_d
  20250606_12z-21001231_18z 060000 /discover/nobackup/dao_ops/intermediate/flk/stage/gdas1/gsrcsr/gdas1.%y4%m2%d2.t%h2z.gsrcsr.tm00.bufr_d
+END
+
+BEGIN ncep_sstvcw_bufr => gdas1.%y4%m2%d2.t%h2z.sstvcw.tm00.bufr_d.ublk
+  20230701_06z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/SSTVCW/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.sstvcw.tm00.bufr_d
 END

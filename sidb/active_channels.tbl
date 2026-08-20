@@ -113,6 +113,8 @@
 #  === For reference: https://emc.ncep.noaa.gov/emc/pages/infrastructure/obs-data/Satellite_Historical_Documentation.php
 #                     http://geos5.org/wiki/index.php?title=Talk:GEOS-5_ADAS_Radiance_Monitoring
 #  03Feb2022 Todling  - revised changed above (for chn 305 of AIRS) to be a single line change instead of a wholesome change
+#  Feb2022 Todling  - revised changed above (for chn 305 of AIRS) to be a single line change instead of a wholesome change
+#  22May2025 A.lee    - Add VIIRS-M
 #=================
 #n_active_channels: 128 
 #active_channels::
@@ -1088,6 +1090,14 @@ n21  20230817 000000  29991231 240000 cris-fsr   1                              
 n21  20230817 000000  29991231 240000 cris-fsr   2     1008                                      1022
 n21  20230817 000000  29991231 240000 cris-fsr   1                             1058
 
+#==============
+# NPP & NO20 VIIRS
+#==============
+# NPP, NOAA20 VIIRS
+npp  20230701 000000  29991231 240000  viirs-m  3   12 15 16
+j1   20230701 000000  29991231 240000  viirs-m  3   12 15 16
+
+
 
 #==============
 # SEVIRI
@@ -1374,5 +1384,13 @@ gcom-w1  20190101 000000  29991231 240000  amsr2      2    9 11
 # ABI
 g16  20230120 120000  20250407 240000  abi 2   8 10
 g18  20230120 120000  29991231 240000  abi 3   8 9 10
+
+#==============
+# NPP & NO20 VIIRS
+#==============
+# NPP, NOAA20 VIIRS
+npp  20230701 000000  29991231 240000  viirs-m  3   12 15 16
+j1   20230701 000000  29991231 240000  viirs-m  3   12 15 16
+
 
 #:: # end active_channels 
