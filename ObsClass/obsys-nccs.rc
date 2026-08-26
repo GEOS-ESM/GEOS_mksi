@@ -471,7 +471,3 @@ BEGIN ncep_goescsr_bufr => gdas1.%y2%m2%d2.t%h2z.gsrcsr.tm00.bufr_d
  20230101_00z-20250606_00z 060000 /archive/input/dao_ops/ops/flk/ncep_gps/bufr/GSRCSR/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.gsrcsr.tm00.bufr_d
  20250606_12z-21001231_18z 060000 /discover/nobackup/dao_ops/intermediate/flk/stage/gdas1/gsrcsr/gdas1.%y4%m2%d2.t%h2z.gsrcsr.tm00.bufr_d
 END
-
-BEGIN ncep_sstvcw_bufr => gdas1.%y4%m2%d2.t%h2z.sstvcw.tm00.bufr_d.ublk
-  20230701_06z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/SSTVCW/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.sstvcw.tm00.bufr_d
-END
