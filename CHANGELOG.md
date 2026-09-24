@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
+- 09Sep2026: Add ABI-G19 location
+
 - 19Aug2026: add VIIRS-M radiances
 
 - 09Mar2026: End use of MODIS on Jan 31, 2026; start using VIIRS beyond that.
