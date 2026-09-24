@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
- - Sync w/ f5430_fp on 19 Aug 2026
+ - Updates ABI location
+ - Add VIIRS-M radiances
 
 ### Added
 
