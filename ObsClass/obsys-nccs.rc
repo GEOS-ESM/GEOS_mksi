@@ -267,6 +267,11 @@ BEGIN ncep_atms_bufr => gdas1.%y4%m2%d2.t%h2z.atms.tm00.bufr_d.ublk
 # 20120213_00z-21001231_18z 060000 /archive/input/dao_ops/ops/flk/ncep_g5obs/bufr/ATMS/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.atms.tm00.bufr_d
   20111115_06z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/ATMS/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.atms.tm00.bufr_d
 END
+
+BEGIN ncep_mws_bufr => gdas1.%y4%m2%d2.t%h2z.mws.tm00.bufr_d.ublk
+  20260801_06z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_test/MWS/Y%y4/M%m2/D%m2/gdas.t%h2z.msmws.tm00.bufr_d
+END
+
 BEGIN ncep_cris_bufr => gdas1.%y4%m2%d2.t%h2z.cris.tm00.bufr_d.ublk
 # 20120107_00z-21001231_18z 060000 /archive/input/dao_ops/ops/flk/ncep_NotUsed/bufr/CRIS/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.cris.tm00.bufr_d
   20120106_06z-20120112_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/CRIS/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.cris.tm00.bufr_d
