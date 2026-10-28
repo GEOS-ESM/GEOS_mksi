@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
- - Sync w/ f5430_fp on 19 Aug 2026
+ - Add class and info for OMPSNM-NOAA20
+ - Add class for DT version of VIIRS AOD (022)
 
 ### Added
 

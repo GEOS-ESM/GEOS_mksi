@@ -34,13 +34,19 @@ END
 # VIIRS NOAA-20 AERDT Level2 Data
 #--------------------------------
 BEGIN vn20aerdt_002_flk => VN20AERDT_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.002.nrt.nc
-  20260201_00z-21001231_18z 000600 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/VIIRS/Level2/VN20AERDT/002/%y4/%j3/AERDT_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.002.nrt.nc
+  20260201_00z-20261002_18z 000600 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/VIIRS/Level2/VN20AERDT/002/%y4/%j3/AERDT_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.002.nrt.nc
 END
 
 # VIIRS NOAA-20 AERDB Level2 Data
 #--------------------------------
 BEGIN vn20aerdb_002_flk => VN20AERDB_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.002.nrt.nc
   20260201_00z-21001231_18z 000600 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/VIIRS/Level2/VN20AERDB/002/%y4/%j3/AERDB_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.002.nrt.nc
+END
+
+# VIIRS NOAA-20 AERDT Level2 Data
+#--------------------------------
+BEGIN vn20aerdt_022_flk => VN20AERDT_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.022.nrt.nc
+  20261003_00z-21001231_18z 000600 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/VIIRS/Level2/VN20AERDT/022/%y4/%j3/AERDT_L2_VIIRS_NOAA20.A%y4%j3.%h2%n2.022.nrt.nc
 END
 
 # MODIS Terra Level2 Data
