@@ -430,7 +430,8 @@ BEGIN npp_ompsnmeff_nc => ompsnmeffnc.%y4%m2%d2.t%h2z.nc
 END
 
 BEGIN n20_ompsnmeff_nc => ompsnmN20effnc.%y4%m2%d2.t%h2z.nc
- 20120201_00z-20261031_18z 060000  /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/ompsnm_eff/Y%y4/M%m2/OMPSNM_N20.%y4%m2%d2_%h2z.nc
+ 20120201_00z-20260827_18z 060000  /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/ompsnm_eff/Y%y4/M%m2/OMPSNM_N20.%y4%m2%d2_%h2z.nc
+ 20260828_00z-21001231_18z 060000  /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/ompsnm_eff_nrt/Y%y4/M%m2/OMPSNM-NRT-N20.%y4%m2%d2_%h2z.nc
 END
 
 BEGIN npp_ompsnp_nc => ompsnpnc.%y4%m2%d2.t%h2z.nc
