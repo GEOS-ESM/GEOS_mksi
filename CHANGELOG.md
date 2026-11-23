@@ -14,6 +14,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- 09Sep2026: Add ABI-G19 location
+
+- 19Aug2026: add VIIRS-M radiances
+
+- 09Mar2026: End use of MODIS on Jan 31, 2026; start using VIIRS beyond that.
+
+15Jan2026
+- added location of VIIRS NOAA-20 files
+
+27Jan2026
+- adjust for AIRS outage in FPP
+
+15Jan2026
+- added location of VIIRS NOAA-20 files
+
+09Jan2026:
+- sync with actually running FPP (OPS handled)
+
+08Jan2026:
+- update location of LLK AERONET files 
+
+15Jul2025:
+- add class-location of hi-res RAOB
+
+01July2025:
+- Turn off SSMIS F17 July 25
+
 30May2025:
 - found that swell cannot handle redundancy in data/time in the database - fix that.
 - also found a bug in the start date for Metop-C AVHRR3

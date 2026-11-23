@@ -86,6 +86,7 @@
 # 2021.07.31 Todling         Add MLS-T for verification
 # 2021.08.18 Todling         Blacked out a few days of AIRS due to data corruption
 # 2021.12.14 Todling         Update MLST from v3/v4 to simply v5
+# 2025.05.22 A.lee           Added ncep_sstvcw_bufr for viirs-m radiance assimilation
 #
 #+BEGIN obclass data set description
 #+  ncep_osbuv8_6_bufr: NCEP SBUV Data in bufr format v8.6
@@ -100,6 +101,7 @@
 #+  ncep_ssmis_bufr:  NCEP SSMIS Data in bufr format
 #+  ncep_ssmit_bufr:  NCEP Satellite SSM/I Data (bufr)
 #+  ncep_prep_bufr:   NCEP Conventional Data in bufr format (ops)
+#+  ncep_uprair_bufr: NCEP high-resolution sonde + pibal data in bufr format 
 #+  ncep_tcvitals:    NCEP Vital files for Tropical Storms
 #+  ncep_mhs_bufr:    NCEP MHS bufr format
 #+  ncep_goesfv_bufr:  NCEP GEOS FV bufr format
@@ -131,6 +133,7 @@
 #+  m2scr_n21_ompslp_nc: M2Scream-OMPS N21 Limb Profilers
 #+  aura_omieff_nc:    AURA OMI netcdf format
 #+  gmao_mlst_bufr:    MLS Retrieved Temperature (for verification in x-exp and FP)
+#+  ncep_sstvcw_bufr:  NCEP VIIRS bufr format
 #+END
 #
 
@@ -410,6 +413,10 @@ BEGIN npp_ompsnp_bufr => OMPS-NP_v2r0_npp.t%y4%m2%d2.%h2z.ubufr
   20180227_00z-21001231_18z 060000  /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/OMPS-NP/bufr/OMPS-NP/Y%y4/M%m2/OMPS-NP_v2r0_npp.t%y4%m2%d2.%h2z.bufr
 END
 
+BEGIN ncep_uprair_bufr => gdas1.%y4%m2%d2.t%h2z.uprair.ublk
+ 20240523_06z-20240624_18z      060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/UPRAIR/Y%y4/M%m2/gdas1.%y4%m2%d2_t%h2z.uprair.tm00.bufr_d
+ 20240626_00z-21001231_18z      060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/UPRAIR/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.uprair.tm00.bufr_d
+END
 # Aircraft metadata for GSI temperature bias correction
 BEGIN ncep_acftpfl_bufr => gdas1.%y4%m2%d2.t%h2z.prepbufr.acft_profiles.ublk
 # 20160511_00z-21001231_18z 060000 /archive/input/dao_ops/ops/flk/ncep_NotUsed/bufr/AIRCFT/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.prepbufr.acft_profiles
@@ -449,9 +456,17 @@ BEGIN aura_omieff_nc => omieff.%y4%m2%d2.t%h2z.nc
  20240609_00z-21001231_18z 060000  /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/omi_eff_adjusted_CORRECTED_nrt/Y%y4/M%m2/OMIeff-adj-nrt.%y4%m2%d2_%h2z.nc
 END
 
+BEGIN ncep_sstvcw_bufr => gdas1.%y4%m2%d2.t%h2z.sstvcw.tm00.bufr_d.ublk
+ 20230701_06z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/SSTVCW/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.sstvcw.tm00.bufr_d
+END
+
 # MLS retrieved temperature
 BEGIN gmao_mlst_bufr => MLSt.%y4%m2%d2.t%h2z.bufr
 #20040813_00z-20150531_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/mls/temperature_v3/bufr/Y%y4/M%m2/MLSt.%y4%m2%d2.t%h2z.bufr
 #20150601_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/mls/temperature_v4/bufr/Y%y4/M%m2/MLSt_v4.%y4%m2%d2.t%h2z.bufr
  20040802_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/reanalysis/mls/temperature_v5/bufr/Y%y4/M%m2/MLSt_v5.%y4%m2%d2.t%h2z.bufr
+END
+
+BEGIN ncep_goescsr_bufr => gdas1.%y2%m2%d2.t%h2z.gsrcsr.tm00.bufr_d
+ 20230101_00z-21001231_18z 060000 /discover/nobackup/projects/gmao/input/dao_ops/ops/flk/ncep_g5obs/bufr/GSRCSR/Y%y4/M%m2/gdas1.%y4%m2%d2.t%h2z.gsrcsr.tm00.bufr_d
 END
