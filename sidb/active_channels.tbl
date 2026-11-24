@@ -114,6 +114,8 @@
 #                     http://geos5.org/wiki/index.php?title=Talk:GEOS-5_ADAS_Radiance_Monitoring
 #  03Feb2022 Todling  - revised changed above (for chn 305 of AIRS) to be a single line change instead of a wholesome change
 #  22May2025 A.lee    - Add VIIRS-M
+#  14Jul2025 Y Zhu    - Allsky ATMS: turned on chns 1-4 and 16
+#  19Sep2026 Todling  - set last date for AMSR2-GCOM-W1 at 20260903
 #  19Sep2026 Todling  - set last date for AMSR2-GCOM-W1 at 20260903
 #=================
 #n_active_channels: 128 
@@ -819,7 +821,7 @@ npp  20250101 000000  20260408 000000  atms  17         5 6 7 8 9 10 11 12 13 14
 npp  20260408 060000  20260414 060000  atms   0                                                             # ATMS Dwell test.  Data unusable.
 npp  20260414 120000  20260429 120000  atms  17         5 6 7 8 9 10 11 12 13 14 15    17 18 19 20 21 22
 npp  20260429 180000  20260511 120000  atms   0                                                             # Safe mode
-npp  20260511 180000  21001231 240000  atms  17         5 6 7 8 9 10 11 12 13 14 15    17 18 19 20 21 22
+npp  20260511 180000  21001231 240000  atms  22 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22   # all-sky ATMS
 
 n20  20180510 120000  20230929 240000  atms  17         5 6 7 8 9 10 11 12 13 14 15    17 18 19 20 21 22
 n20  20230930 000000  20231002 240000  atms   0                                                            # N20 safe mode starts on 09/30.
@@ -827,13 +829,13 @@ n20  20231003 000000  20240321 120000  atms  17         5 6 7 8 9 10 11 12 13 14
 n20  20240321 180000  20240408 060000  atms  0                                                            # N-20 maneuver
 n20  20240408 120000  20240621 060000  atms  17         5 6 7 8 9 10 11 12 13 14 15    17 18 19 20 21 22
 n20  20240621 120000  20241231 240000  atms  16         5 6 7 8 9 10 11 12 13 14       17 18 19 20 21 22   # Noisy channel 15 (all sats)
-n20  20250101 000000  21001231 240000  atms  17         5 6 7 8 9 10 11 12 13 14 15    17 18 19 20 21 22   # Chn15 back (used at ECMWF)
+n20  20250101 000000  21001231 240000  atms  22 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  # all-sky ATMS
 
 n21  20230920 120000  20240621 060000  atms  17         5 6 7 8 9 10 11 12 13 14 15    17 18 19 20 21 22
 n21  20240621 120000  20240720 000000  atms  16         5 6 7 8 9 10 11 12 13 14       17 18 19 20 21 22  # Noisy channel 15 (all sats)
 n21  20240720 060000  20240720 180000  atms   0                                                            # Geolocation problem
 n21  20240721 000000  20241231 240000  atms  16         5 6 7 8 9 10 11 12 13 14       17 18 19 20 21 22
-n21  20250101 000000  21001231 240000  atms  17         5 6 7 8 9 10 11 12 13 14 15    17 18 19 20 21 22   # Chn15 back (used at ECMWF)
+n21  20250101 000000  21001231 240000  atms  22 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22   # All-sky ATMS
 
 # cris active channels                           m       01    02    03    04    05    06    07    08    09    10
 npp  20171020 000000  20190325 180000 cris-fsr   9             57    58    59    60    61    62    63    64    65
